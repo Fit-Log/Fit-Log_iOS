@@ -17,6 +17,27 @@
 		8802D4372AEFF90B000E907E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8802D4362AEFF90B000E907E /* SnapKit */; };
 		8802D43A2AEFF924000E907E /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 8802D4392AEFF924000E907E /* Moya */; };
 		8802D43D2AEFF959000E907E /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 8802D43C2AEFF959000E907E /* RxCocoa */; };
+		8802D4522AF00048000E907E /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802D4512AF00048000E907E /* UIViewController.swift */; };
+		8802D4572AF0015B000E907E /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802D4562AF0015B000E907E /* UIFont.swift */; };
+		8802D4882AF00456000E907E /* IBMPlexSansKR-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8802D4802AF00456000E907E /* IBMPlexSansKR-ExtraLight.ttf */; };
+		8802D4892AF00456000E907E /* IBMPlexSansKR-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8802D4812AF00456000E907E /* IBMPlexSansKR-Regular.ttf */; };
+		8802D48A2AF00456000E907E /* IBMPlexSansKR-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8802D4822AF00456000E907E /* IBMPlexSansKR-SemiBold.ttf */; };
+		8802D48B2AF00456000E907E /* IBMPlexSansKR-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8802D4832AF00456000E907E /* IBMPlexSansKR-Medium.ttf */; };
+		8802D48D2AF00456000E907E /* IBMPlexSansKR-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8802D4852AF00456000E907E /* IBMPlexSansKR-Light.ttf */; };
+		8802D48E2AF00456000E907E /* IBMPlexSansKR-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8802D4862AF00456000E907E /* IBMPlexSansKR-Thin.ttf */; };
+		8802D48F2AF00456000E907E /* IBMPlexSansKR-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8802D4872AF00456000E907E /* IBMPlexSansKR-Bold.ttf */; };
+		8802D49E2AF010DD000E907E /* NotoSansKR-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8802D4912AF010DD000E907E /* NotoSansKR-VariableFont_wght.ttf */; };
+		8802D49F2AF010DD000E907E /* NotoSansKR-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8802D4932AF010DD000E907E /* NotoSansKR-Light.ttf */; };
+		8802D4A02AF010DD000E907E /* NotoSansKR-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8802D4942AF010DD000E907E /* NotoSansKR-Medium.ttf */; };
+		8802D4A12AF010DD000E907E /* NotoSansKR-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8802D4952AF010DD000E907E /* NotoSansKR-ExtraBold.ttf */; };
+		8802D4A22AF010DD000E907E /* NotoSansKR-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8802D4962AF010DD000E907E /* NotoSansKR-Regular.ttf */; };
+		8802D4A32AF010DD000E907E /* NotoSansKR-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8802D4972AF010DD000E907E /* NotoSansKR-SemiBold.ttf */; };
+		8802D4A42AF010DD000E907E /* NotoSansKR-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8802D4982AF010DD000E907E /* NotoSansKR-Black.ttf */; };
+		8802D4A52AF010DD000E907E /* NotoSansKR-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8802D4992AF010DD000E907E /* NotoSansKR-Thin.ttf */; };
+		8802D4A62AF010DD000E907E /* NotoSansKR-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8802D49A2AF010DD000E907E /* NotoSansKR-ExtraLight.ttf */; };
+		8802D4A72AF010DD000E907E /* NotoSansKR-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8802D49B2AF010DD000E907E /* NotoSansKR-Bold.ttf */; };
+		8802D4A82AF010DD000E907E /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8802D49C2AF010DD000E907E /* OFL.txt */; };
+		8802D4A92AF010DD000E907E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8802D49D2AF010DD000E907E /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +49,27 @@
 		8802D4222AEFE273000E907E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8802D42D2AEFE2EE000E907E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8802D4302AEFE301000E907E /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		8802D4512AF00048000E907E /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		8802D4562AF0015B000E907E /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		8802D4802AF00456000E907E /* IBMPlexSansKR-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansKR-ExtraLight.ttf"; sourceTree = "<group>"; };
+		8802D4812AF00456000E907E /* IBMPlexSansKR-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansKR-Regular.ttf"; sourceTree = "<group>"; };
+		8802D4822AF00456000E907E /* IBMPlexSansKR-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansKR-SemiBold.ttf"; sourceTree = "<group>"; };
+		8802D4832AF00456000E907E /* IBMPlexSansKR-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansKR-Medium.ttf"; sourceTree = "<group>"; };
+		8802D4852AF00456000E907E /* IBMPlexSansKR-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansKR-Light.ttf"; sourceTree = "<group>"; };
+		8802D4862AF00456000E907E /* IBMPlexSansKR-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansKR-Thin.ttf"; sourceTree = "<group>"; };
+		8802D4872AF00456000E907E /* IBMPlexSansKR-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansKR-Bold.ttf"; sourceTree = "<group>"; };
+		8802D4912AF010DD000E907E /* NotoSansKR-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		8802D4932AF010DD000E907E /* NotoSansKR-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Light.ttf"; sourceTree = "<group>"; };
+		8802D4942AF010DD000E907E /* NotoSansKR-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.ttf"; sourceTree = "<group>"; };
+		8802D4952AF010DD000E907E /* NotoSansKR-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-ExtraBold.ttf"; sourceTree = "<group>"; };
+		8802D4962AF010DD000E907E /* NotoSansKR-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.ttf"; sourceTree = "<group>"; };
+		8802D4972AF010DD000E907E /* NotoSansKR-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-SemiBold.ttf"; sourceTree = "<group>"; };
+		8802D4982AF010DD000E907E /* NotoSansKR-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Black.ttf"; sourceTree = "<group>"; };
+		8802D4992AF010DD000E907E /* NotoSansKR-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Thin.ttf"; sourceTree = "<group>"; };
+		8802D49A2AF010DD000E907E /* NotoSansKR-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-ExtraLight.ttf"; sourceTree = "<group>"; };
+		8802D49B2AF010DD000E907E /* NotoSansKR-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.ttf"; sourceTree = "<group>"; };
+		8802D49C2AF010DD000E907E /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		8802D49D2AF010DD000E907E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +116,8 @@
 		8802D4282AEFE294000E907E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8802D4902AF010DD000E907E /* Noto_Sans_KR */,
+				8802D47F2AF00456000E907E /* IBM_Plex_Sans_KR */,
 				8802D41D2AEFE273000E907E /* Assets.xcassets */,
 				8802D41F2AEFE273000E907E /* LaunchScreen.storyboard */,
 			);
@@ -84,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				8802D42A2AEFE2C3000E907E /* Application */,
+				8802D44F2AF00000000E907E /* Extension */,
 				8802D42F2AEFE2F4000E907E /* Base */,
 				8802D42B2AEFE2CD000E907E /* Scene */,
 			);
@@ -121,6 +166,58 @@
 				8802D4302AEFE301000E907E /* BaseVC.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		8802D44F2AF00000000E907E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8802D4512AF00048000E907E /* UIViewController.swift */,
+				8802D4562AF0015B000E907E /* UIFont.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8802D47F2AF00456000E907E /* IBM_Plex_Sans_KR */ = {
+			isa = PBXGroup;
+			children = (
+				8802D4802AF00456000E907E /* IBMPlexSansKR-ExtraLight.ttf */,
+				8802D4812AF00456000E907E /* IBMPlexSansKR-Regular.ttf */,
+				8802D4822AF00456000E907E /* IBMPlexSansKR-SemiBold.ttf */,
+				8802D4832AF00456000E907E /* IBMPlexSansKR-Medium.ttf */,
+				8802D4852AF00456000E907E /* IBMPlexSansKR-Light.ttf */,
+				8802D4862AF00456000E907E /* IBMPlexSansKR-Thin.ttf */,
+				8802D4872AF00456000E907E /* IBMPlexSansKR-Bold.ttf */,
+			);
+			name = IBM_Plex_Sans_KR;
+			path = ../../../../../Documents/Font/IBM_Plex_Sans_KR;
+			sourceTree = "<group>";
+		};
+		8802D4902AF010DD000E907E /* Noto_Sans_KR */ = {
+			isa = PBXGroup;
+			children = (
+				8802D4912AF010DD000E907E /* NotoSansKR-VariableFont_wght.ttf */,
+				8802D4922AF010DD000E907E /* static */,
+				8802D49C2AF010DD000E907E /* OFL.txt */,
+				8802D49D2AF010DD000E907E /* README.txt */,
+			);
+			name = Noto_Sans_KR;
+			path = ../../../../../Documents/Font/Noto_Sans_KR;
+			sourceTree = "<group>";
+		};
+		8802D4922AF010DD000E907E /* static */ = {
+			isa = PBXGroup;
+			children = (
+				8802D4932AF010DD000E907E /* NotoSansKR-Light.ttf */,
+				8802D4942AF010DD000E907E /* NotoSansKR-Medium.ttf */,
+				8802D4952AF010DD000E907E /* NotoSansKR-ExtraBold.ttf */,
+				8802D4962AF010DD000E907E /* NotoSansKR-Regular.ttf */,
+				8802D4972AF010DD000E907E /* NotoSansKR-SemiBold.ttf */,
+				8802D4982AF010DD000E907E /* NotoSansKR-Black.ttf */,
+				8802D4992AF010DD000E907E /* NotoSansKR-Thin.ttf */,
+				8802D49A2AF010DD000E907E /* NotoSansKR-ExtraLight.ttf */,
+				8802D49B2AF010DD000E907E /* NotoSansKR-Bold.ttf */,
+			);
+			path = static;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +291,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				8802D4212AEFE273000E907E /* LaunchScreen.storyboard in Resources */,
+				8802D4A32AF010DD000E907E /* NotoSansKR-SemiBold.ttf in Resources */,
+				8802D49F2AF010DD000E907E /* NotoSansKR-Light.ttf in Resources */,
+				8802D48F2AF00456000E907E /* IBMPlexSansKR-Bold.ttf in Resources */,
+				8802D4A62AF010DD000E907E /* NotoSansKR-ExtraLight.ttf in Resources */,
+				8802D4A72AF010DD000E907E /* NotoSansKR-Bold.ttf in Resources */,
+				8802D4A22AF010DD000E907E /* NotoSansKR-Regular.ttf in Resources */,
+				8802D49E2AF010DD000E907E /* NotoSansKR-VariableFont_wght.ttf in Resources */,
+				8802D4882AF00456000E907E /* IBMPlexSansKR-ExtraLight.ttf in Resources */,
+				8802D48A2AF00456000E907E /* IBMPlexSansKR-SemiBold.ttf in Resources */,
+				8802D4A82AF010DD000E907E /* OFL.txt in Resources */,
+				8802D48E2AF00456000E907E /* IBMPlexSansKR-Thin.ttf in Resources */,
+				8802D48B2AF00456000E907E /* IBMPlexSansKR-Medium.ttf in Resources */,
+				8802D4A52AF010DD000E907E /* NotoSansKR-Thin.ttf in Resources */,
 				8802D41E2AEFE273000E907E /* Assets.xcassets in Resources */,
+				8802D4A02AF010DD000E907E /* NotoSansKR-Medium.ttf in Resources */,
+				8802D4A42AF010DD000E907E /* NotoSansKR-Black.ttf in Resources */,
+				8802D4A12AF010DD000E907E /* NotoSansKR-ExtraBold.ttf in Resources */,
+				8802D4892AF00456000E907E /* IBMPlexSansKR-Regular.ttf in Resources */,
+				8802D4A92AF010DD000E907E /* README.txt in Resources */,
+				8802D48D2AF00456000E907E /* IBMPlexSansKR-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,8 +323,10 @@
 			files = (
 				8802D42E2AEFE2EE000E907E /* MainViewController.swift in Sources */,
 				8802D4152AEFE272000E907E /* AppDelegate.swift in Sources */,
+				8802D4572AF0015B000E907E /* UIFont.swift in Sources */,
 				8802D4172AEFE272000E907E /* SceneDelegate.swift in Sources */,
 				8802D4312AEFE301000E907E /* BaseVC.swift in Sources */,
+				8802D4522AF00048000E907E /* UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
