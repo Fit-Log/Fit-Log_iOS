@@ -10,6 +10,9 @@ class BaseVC: UIViewController, UIGestureRecognizerDelegate {
         navigationItem.hidesBackButton = false
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
     override func viewWillLayoutSubviews() {
         
         configureUI()
