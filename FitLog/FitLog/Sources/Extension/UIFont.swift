@@ -12,7 +12,7 @@ extension UIFont {
         case thin = "Thin"
     }
 
-    static func notoSansFont(font: NotoSansKR, ofSize: CGFloat) -> UIFont {
+    static func NotoSansFont(font: NotoSansKR, ofSize: CGFloat) -> UIFont {
         return UIFont(name: "NotoSansKR-\(font.rawValue)", size: ofSize)!
     }
     
