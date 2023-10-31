@@ -38,6 +38,9 @@
 		8802D4A72AF010DD000E907E /* NotoSansKR-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8802D49B2AF010DD000E907E /* NotoSansKR-Bold.ttf */; };
 		8802D4A82AF010DD000E907E /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8802D49C2AF010DD000E907E /* OFL.txt */; };
 		8802D4A92AF010DD000E907E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8802D49D2AF010DD000E907E /* README.txt */; };
+		8802D4AD2AF0BDDE000E907E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802D4AC2AF0BDDE000E907E /* UIView.swift */; };
+		8802D4AF2AF0E2CE000E907E /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802D4AE2AF0E2CE000E907E /* CALayer.swift */; };
+		8802D4B12AF0F4E2000E907E /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802D4B02AF0F4E2000E907E /* MenuCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +73,9 @@
 		8802D49B2AF010DD000E907E /* NotoSansKR-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.ttf"; sourceTree = "<group>"; };
 		8802D49C2AF010DD000E907E /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		8802D49D2AF010DD000E907E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		8802D4AC2AF0BDDE000E907E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		8802D4AE2AF0E2CE000E907E /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
+		8802D4B02AF0F4E2000E907E /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				8802D42D2AEFE2EE000E907E /* MainViewController.swift */,
+				8802D4B22AF0F4E4000E907E /* Cell */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -173,6 +180,8 @@
 			children = (
 				8802D4512AF00048000E907E /* UIViewController.swift */,
 				8802D4562AF0015B000E907E /* UIFont.swift */,
+				8802D4AC2AF0BDDE000E907E /* UIView.swift */,
+				8802D4AE2AF0E2CE000E907E /* CALayer.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -218,6 +227,14 @@
 				8802D49B2AF010DD000E907E /* NotoSansKR-Bold.ttf */,
 			);
 			path = static;
+			sourceTree = "<group>";
+		};
+		8802D4B22AF0F4E4000E907E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8802D4B02AF0F4E2000E907E /* MenuCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,8 +339,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8802D42E2AEFE2EE000E907E /* MainViewController.swift in Sources */,
+				8802D4AF2AF0E2CE000E907E /* CALayer.swift in Sources */,
+				8802D4B12AF0F4E2000E907E /* MenuCell.swift in Sources */,
 				8802D4152AEFE272000E907E /* AppDelegate.swift in Sources */,
 				8802D4572AF0015B000E907E /* UIFont.swift in Sources */,
+				8802D4AD2AF0BDDE000E907E /* UIView.swift in Sources */,
 				8802D4172AEFE272000E907E /* SceneDelegate.swift in Sources */,
 				8802D4312AEFE301000E907E /* BaseVC.swift in Sources */,
 				8802D4522AF00048000E907E /* UIViewController.swift in Sources */,
