@@ -1,6 +1,16 @@
 import UIKit
 
 extension CALayer {
+    
+    func corner(radius: CGFloat) {
+        cornerRadius = radius
+    }
+    
+    func border(color: UIColor, width: CGFloat) {
+        borderColor = color.cgColor
+        borderWidth = width
+    }
+    
     func shadow(
         color: UIColor,
         alpha: Float,

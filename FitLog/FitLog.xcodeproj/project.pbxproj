@@ -41,6 +41,7 @@
 		8802D4AD2AF0BDDE000E907E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802D4AC2AF0BDDE000E907E /* UIView.swift */; };
 		8802D4AF2AF0E2CE000E907E /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802D4AE2AF0E2CE000E907E /* CALayer.swift */; };
 		8802D4B12AF0F4E2000E907E /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802D4B02AF0F4E2000E907E /* MenuCell.swift */; };
+		8802D4DA2AF2652A000E907E /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802D4D92AF2652A000E907E /* Chart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		8802D4AC2AF0BDDE000E907E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		8802D4AE2AF0E2CE000E907E /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
 		8802D4B02AF0F4E2000E907E /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		8802D4D92AF2652A000E907E /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		8802D4292AEFE2B4000E907E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				8802D4D82AF2651D000E907E /* Component */,
 				8802D42A2AEFE2C3000E907E /* Application */,
 				8802D44F2AF00000000E907E /* Extension */,
 				8802D42F2AEFE2F4000E907E /* Base */,
@@ -237,6 +240,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		8802D4D82AF2651D000E907E /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				8802D4D92AF2652A000E907E /* Chart.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -338,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8802D4DA2AF2652A000E907E /* Chart.swift in Sources */,
 				8802D42E2AEFE2EE000E907E /* MainViewController.swift in Sources */,
 				8802D4AF2AF0E2CE000E907E /* CALayer.swift in Sources */,
 				8802D4B12AF0F4E2000E907E /* MenuCell.swift in Sources */,
