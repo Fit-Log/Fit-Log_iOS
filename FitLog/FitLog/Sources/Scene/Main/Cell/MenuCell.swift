@@ -12,7 +12,7 @@ class MenuCell: UICollectionViewCell {
     }
     private let menuLabel = UILabel().then {
         $0.text = "닭가슴살 3개\n프로틴 쉐이크\n고구마 반 개\n"
-        $0.numberOfLines = 0
+        $0.numberOfLines = 3
         $0.textColor = .gray700
         $0.font = .NotoSansFont(font: .medium, ofSize: 14)
     }
