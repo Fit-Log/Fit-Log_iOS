@@ -2,6 +2,11 @@ import UIKit
 
 extension CALayer {
     
+    func roundCorners(cornerRadius: CGFloat, maskedCorners: CACornerMask) {
+        self.cornerRadius = cornerRadius
+        self.maskedCorners = CACornerMask(arrayLiteral: maskedCorners)
+    }
+    
     func border(color: UIColor, width: CGFloat) {
         borderColor = color.cgColor
         borderWidth = width
