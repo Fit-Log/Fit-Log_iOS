@@ -56,6 +56,8 @@
 		888CC4922AFB36C800C50A99 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CC4912AFB36C800C50A99 /* TabBarVC.swift */; };
 		888CC4BE2AFB6A5400C50A99 /* ChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CC4BD2AFB6A5400C50A99 /* ChangeViewController.swift */; };
 		888CC4C22AFB6D4300C50A99 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CC4C12AFB6D4300C50A99 /* RecordViewController.swift */; };
+		888CC4EA2AFD22EC00C50A99 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 888CC4E92AFD22EC00C50A99 /* DGCharts */; };
+		888CC4EC2AFDD4BE00C50A99 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CC4EB2AFDD4BE00C50A99 /* CustomTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +107,7 @@
 		888CC4912AFB36C800C50A99 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		888CC4BD2AFB6A5400C50A99 /* ChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeViewController.swift; sourceTree = "<group>"; };
 		888CC4C12AFB6D4300C50A99 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		888CC4EB2AFDD4BE00C50A99 /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,7 @@
 				8802D4372AEFF90B000E907E /* SnapKit in Frameworks */,
 				888CC48E2AFB30D800C50A99 /* RxGesture in Frameworks */,
 				8802D43D2AEFF959000E907E /* RxCocoa in Frameworks */,
+				888CC4EA2AFD22EC00C50A99 /* DGCharts in Frameworks */,
 				8802D43A2AEFF924000E907E /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,7 +191,7 @@
 				888CC47A2AFA784A00C50A99 /* Onboarding */,
 				888CC47F2AFA806A00C50A99 /* Auth */,
 				8802D42C2AEFE2DA000E907E /* Main */,
-				888CC4C02AFB6D3000C50A99 /* Change */,
+				888CC4C02AFB6D3000C50A99 /* PhysicalChange */,
 				888CC4BF2AFB6CCD00C50A99 /* Record */,
 			);
 			path = Scene;
@@ -281,6 +285,7 @@
 				888CC4762AFA563E00C50A99 /* CustomTextField.swift */,
 				888CC4782AFA754D00C50A99 /* CustomButton.swift */,
 				888CC47D2AFA7AA200C50A99 /* CustomLabel.swift */,
+				888CC4EB2AFDD4BE00C50A99 /* CustomTextView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -329,12 +334,12 @@
 			path = Record;
 			sourceTree = "<group>";
 		};
-		888CC4C02AFB6D3000C50A99 /* Change */ = {
+		888CC4C02AFB6D3000C50A99 /* PhysicalChange */ = {
 			isa = PBXGroup;
 			children = (
 				888CC4BD2AFB6A5400C50A99 /* ChangeViewController.swift */,
 			);
-			path = Change;
+			path = PhysicalChange;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +364,7 @@
 				8802D4392AEFF924000E907E /* Moya */,
 				8802D43C2AEFF959000E907E /* RxCocoa */,
 				888CC48D2AFB30D800C50A99 /* RxGesture */,
+				888CC4E92AFD22EC00C50A99 /* DGCharts */,
 			);
 			productName = FitLog;
 			productReference = 8802D4112AEFE272000E907E /* FitLog.app */;
@@ -394,6 +400,7 @@
 				8802D4382AEFF924000E907E /* XCRemoteSwiftPackageReference "Moya" */,
 				8802D43B2AEFF959000E907E /* XCRemoteSwiftPackageReference "RxSwift" */,
 				888CC48C2AFB30D800C50A99 /* XCRemoteSwiftPackageReference "RxGesture" */,
+				888CC4E82AFD22EC00C50A99 /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 8802D4122AEFE272000E907E /* Products */;
 			projectDirPath = "";
@@ -442,6 +449,7 @@
 			files = (
 				888CC4792AFA754D00C50A99 /* CustomButton.swift in Sources */,
 				888CC47E2AFA7AA200C50A99 /* CustomLabel.swift in Sources */,
+				888CC4EC2AFDD4BE00C50A99 /* CustomTextView.swift in Sources */,
 				8802D4DA2AF2652A000E907E /* Chart.swift in Sources */,
 				8802D42E2AEFE2EE000E907E /* MainViewController.swift in Sources */,
 				8802D4AF2AF0E2CE000E907E /* CALayer.swift in Sources */,
@@ -717,6 +725,14 @@
 				minimumVersion = 4.0.4;
 			};
 		};
+		888CC4E82AFD22EC00C50A99 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -744,6 +760,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 888CC48C2AFB30D800C50A99 /* XCRemoteSwiftPackageReference "RxGesture" */;
 			productName = RxGesture;
+		};
+		888CC4E92AFD22EC00C50A99 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 888CC4E82AFD22EC00C50A99 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
