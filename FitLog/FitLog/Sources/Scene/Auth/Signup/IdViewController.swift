@@ -7,10 +7,18 @@ class IdViewController: BaseVC {
     private let disposeBag = DisposeBag()
     
     private let logoImageView = UIImageView(image: .logo)
-    private let signupLabel = CustomLabel(text: "회원가입", textColor: .gray700, font: .IBMPlexSansFont(font: .semiBold, ofSize: 16))
+    private let signupLabel = UILabel().then {
+        $0.text = "회원가입"
+        $0.textColor = .gray700
+        $0.font = .IBMPlexSansFont(font: .semiBold, ofSize: 16)
+    }
     private let idTextField = CustomTextField(placeholder: "아이디", isSecure: false)
     private let nextButton = CustomButton(type: .system, title: "다음", backgroundColor: .main200, isEnabled: false)
-    private let progressLabel = CustomLabel(text: "1/4", textColor: .gray700, font: .IBMPlexSansFont(font: .semiBold, ofSize: 16))
+    private let progressLabel = UILabel().then {
+        $0.text = "1/4"
+        $0.textColor = .gray700
+        $0.font = .IBMPlexSansFont(font: .semiBold, ofSize: 16)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

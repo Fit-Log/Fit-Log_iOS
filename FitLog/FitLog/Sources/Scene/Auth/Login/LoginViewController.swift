@@ -7,7 +7,11 @@ class LoginViewController: BaseVC {
     private let disposeBag = DisposeBag()
     
     private let logoImageView = UIImageView(image: .logo)
-    private let loginLabel = CustomLabel(text: "로그인", textColor: .gray700, font: .IBMPlexSansFont(font: .semiBold, ofSize: 16))
+    private let loginLabel = UILabel().then {
+        $0.text = "로그인"
+        $0.textColor = .gray700
+        $0.font = .IBMPlexSansFont(font: .semiBold, ofSize: 16)
+    }
     private let idTextField = CustomTextField(placeholder: "아이디", isSecure: false)
     private let passwordTextField = CustomTextField(placeholder: "비밀번호", isSecure: true)
     private let loginButton = CustomButton(type: .system, title: "로그인", backgroundColor: .main200, isEnabled: false)
@@ -16,7 +20,11 @@ class LoginViewController: BaseVC {
         $0.spacing = 4
         $0.backgroundColor = .clear
     }
-    private let signupLabel = CustomLabel(text: "아직 회원이 아니신가요?", textColor: .gray600, font: .IBMPlexSansFont(font: .medium, ofSize: 12))
+    private let signupLabel = UILabel().then {
+        $0.text = "아직 회원이 아니신가요?"
+        $0.textColor = .gray600
+        $0.font = .IBMPlexSansFont(font: .medium, ofSize: 12)
+    }
     private let signupButton = LabelButton(type: .system, title: "회원가입하기", titleColor: .main600, font: .IBMPlexSansFont(font: .medium, ofSize: 12))
     
     override func viewDidLoad() {
@@ -112,7 +120,7 @@ class LoginViewController: BaseVC {
         
         loginButton.rx.tap
             .bind(onNext: {
-                self.pushViewController(MainViewController())
+                self.pushViewController(TabBarVC())
             }).disposed(by: disposeBag)
         
         signupButton.rx.tap

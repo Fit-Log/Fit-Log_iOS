@@ -7,8 +7,16 @@ class InfoViewController: BaseVC {
     private let disposeBag = DisposeBag()
     
     private let logoImageView = UIImageView(image: .logo)
-    private let signupLabel = CustomLabel(text: "회원가입", textColor: .gray700, font: .IBMPlexSansFont(font: .semiBold, ofSize: 16))
-    private let progressLabel = CustomLabel(text: "3/4", textColor: .gray700, font: .IBMPlexSansFont(font: .semiBold, ofSize: 16))
+    private let signupLabel = UILabel().then {
+        $0.text = "회원가입"
+        $0.textColor = .gray700
+        $0.font = .IBMPlexSansFont(font: .semiBold, ofSize: 16)
+    }
+    private let progressLabel = UILabel().then {
+        $0.text = "3/4"
+        $0.textColor = .gray700
+        $0.font = .IBMPlexSansFont(font: .semiBold, ofSize: 16)
+    }
     private let nameTextField = CustomTextField(placeholder: "이름", isSecure: false)
     private let ageTextField = CustomTextField(placeholder: "나이", isSecure: false).then {
         $0.keyboardType = .numberPad

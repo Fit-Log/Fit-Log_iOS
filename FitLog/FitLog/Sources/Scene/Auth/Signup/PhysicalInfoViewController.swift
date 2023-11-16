@@ -6,17 +6,33 @@ class PhysicalInfoViewController: BaseVC {
     
     private let disposeBag = DisposeBag()
     
-    private let logoImageView = UIImageView(image: .logo)
-    private let signupLabel = CustomLabel(text: "회원가입", textColor: .gray700, font: .IBMPlexSansFont(font: .semiBold, ofSize: 16))
-    private let progressLabel = CustomLabel(text: "4/4", textColor: .gray700, font: .IBMPlexSansFont(font: .semiBold, ofSize: 16))
+    private let logoImageView = UIImageView(image: .logo)   
+    private let signupLabel = UILabel().then {
+        $0.text = "회원가입"
+        $0.textColor = .gray700
+        $0.font = .IBMPlexSansFont(font: .semiBold, ofSize: 16)
+    }
+    private let progressLabel = UILabel().then {
+        $0.text = "4/4"
+        $0.textColor = .gray700
+        $0.font = .IBMPlexSansFont(font: .semiBold, ofSize: 16)
+    }
     private let weightTextField = CustomTextField(placeholder: "몸무게", isSecure: false).then {
         $0.keyboardType = .numberPad
     }
     private let heightTextField = CustomTextField(placeholder: "키", isSecure: false).then {
         $0.keyboardType = .numberPad
     }
-    private let kgLabel = CustomLabel(text: "kg", textColor: .gray800, font: .IBMPlexSansFont(font: .medium, ofSize: 14))
-    private let cmLabel = CustomLabel(text: "cm", textColor: .gray800, font: .IBMPlexSansFont(font: .medium, ofSize: 14))
+    private let kgLabel = UILabel().then {
+        $0.text = "kg"
+        $0.textColor = .gray700
+        $0.font = .IBMPlexSansFont(font: .medium, ofSize: 14)
+    }
+    private let cmLabel = UILabel().then {
+        $0.text = "cm"
+        $0.textColor = .gray700
+        $0.font = .IBMPlexSansFont(font: .medium, ofSize: 14)
+    }
     private let signupButton = CustomButton(type: .system, title: "가입하기", backgroundColor: .main200, isEnabled: false)
     
     override func viewDidLoad() {
