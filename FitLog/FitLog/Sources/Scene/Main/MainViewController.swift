@@ -1,14 +1,21 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RxGesture
 
 class MainViewController: BaseVC {
+    
+    private let disposeBag = DisposeBag()
     
     private let scrollView = UIScrollView()
     private let contentView = UIView()
     private let mainView = UIView()
     
-    private let mainLogoImage = UIImageView(image: UIImage(named: "logo"))
+    private let topPaddingView = UIView().then {
+        $0.backgroundColor = .white
+    }
+    private let profileButton = LabelButton(type: .system, title: "조영준", titleColor: .gray700, font: .IBMPlexSansFont(font: .regular, ofSize: 12))
+    private let mainLogoImage = UIImageView(image: .logo)
     private let todayLabel = UILabel().then {
         $0.text = "오늘"
         $0.textColor = .black
@@ -37,7 +44,7 @@ class MainViewController: BaseVC {
     }
     private let whiteView = UIView().then {
         $0.backgroundColor = .white
-        $0.roundCorners(cornerRadius: 8, maskedCorners: [.layerMinXMaxYCorner, .layerMaxXMaxYCorner])
+        $0.layer.roundCorners(cornerRadius: 8, maskedCorners: [.layerMinXMaxYCorner, .layerMaxXMaxYCorner])
     }
     private let typeStackView = UIStackView().then {
         $0.axis = .horizontal
@@ -114,33 +121,33 @@ class MainViewController: BaseVC {
         $0.setImage(UIImage(named: "editIcon"), for: .normal)
         $0.tintColor = .gray600
     }
-    private let goalView = UIView().then {
+    private let goalTextView = CustomTextView()
+    private let bottomPaddingView = UIView().then {
         $0.backgroundColor = .white
-        $0.layer.cornerRadius = 8
-        $0.layer.border(color: .gray100, width: 1)
-    }
-    private let goalContentLabel = UILabel().then {
-        $0.text = "아 운동해야지........"
-        $0.textColor = .main800
-        $0.font = .IBMPlexSansFont(font: .medium, ofSize: 16)
+        $0.layer.roundCorners(cornerRadius: 20, maskedCorners: [.layerMaxXMinYCorner, .layerMinXMinYCorner])
+        $0.layer.shadow(color: .black, alpha: 0.2, x: 0, y: -3, blur: 7, spread: 0)
+        $0.clipsToBounds = false
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
-        navigationBarSettting()
+        self.navigationController?.isNavigationBarHidden = true
+        //safearea 무효화시키기
         collectionView.delegate = self
         collectionView.dataSource = self
     }
     override func configureUI() {
         super.configureUI()
         
-        view.addSubview(scrollView)
+        [scrollView, topPaddingView].forEach({ view.addSubview($0) })
+        
+        [profileButton, mainLogoImage].forEach({ topPaddingView.addSubview($0) })
+         
         scrollView.addSubview(contentView)
         contentView.addSubview(mainView)
         
         [
-            mainLogoImage,
             todayLabel,
             dateLabel,
             blueView,
@@ -151,7 +158,8 @@ class MainViewController: BaseVC {
             goalLabel,
             explainLabel,
             goalEditButton,
-            goalView,
+            goalTextView,
+            bottomPaddingView
         ].forEach({ mainView.addSubview($0) })
         
         [
@@ -179,8 +187,6 @@ class MainViewController: BaseVC {
             workoutTime3
         ].forEach({ timeStackView.addArrangedSubview($0) })
         
-        goalView.addSubview(goalContentLabel)
-        
     }
     override func setupConstraints() {
         super.setupConstraints()
@@ -194,16 +200,24 @@ class MainViewController: BaseVC {
         }
         mainView.snp.makeConstraints {
             $0.top.leading.trailing.bottom.equalToSuperview()
-            $0.height.equalTo(view.frame.height + 120)
+            $0.height.equalTo(view.frame.height + 170)
+        }
+        topPaddingView.snp.makeConstraints {
+            $0.top.left.right.equalToSuperview()
+            $0.height.equalTo(102)
         }
         mainLogoImage.snp.makeConstraints {
-            $0.top.equalToSuperview()
+            $0.top.equalToSuperview().inset(60)
             $0.centerX.equalToSuperview()
             $0.width.equalTo(44)
             $0.height.equalTo(36)
         }
+        profileButton.snp.makeConstraints {
+            $0.top.equalToSuperview().inset(68)
+            $0.right.equalToSuperview().inset(20)
+        }
         todayLabel.snp.makeConstraints {
-            $0.top.equalTo(mainLogoImage.snp.bottom).offset(10)
+            $0.top.equalToSuperview().inset(50)
             $0.left.equalToSuperview().inset(20)
         }
         dateLabel.snp.makeConstraints {
@@ -276,20 +290,53 @@ class MainViewController: BaseVC {
             $0.right.equalToSuperview().inset(20)
             $0.width.height.equalTo(18)
         }
-        goalView.snp.makeConstraints {
+        goalTextView.snp.makeConstraints {
             $0.top.equalTo(explainLabel.snp.bottom).offset(12)
             $0.left.right.equalToSuperview().inset(20)
             $0.height.equalTo(72)
         }
-        goalContentLabel.snp.makeConstraints {
-            $0.top.bottom.equalToSuperview().inset(12)
-            $0.left.right.equalToSuperview().inset(20)
+        bottomPaddingView.snp.makeConstraints {
+            $0.left.right.equalToSuperview()
+            $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(82)
+            $0.height.equalTo(110)
         }
-    }
-    
-    func navigationBarSettting() {
         
     }
+    override func subscribe() {
+        super.subscribe()
+        
+        view.rx.tapGesture()
+            .when(.recognized)
+            .bind(onNext: {_ in
+                self.view.endEditing(true)
+            }).disposed(by: disposeBag)
+        
+        blueView.rx.tapGesture()
+            .when(.recognized)
+            .bind(onNext: {_ in 
+                self.hidesBottomBarWhenPushed = true
+                self.pushViewController(WorkoutTimeViewController())
+            }).disposed(by: disposeBag)
+        
+        profileButton.rx.tap
+            .bind(onNext: {
+                print("fjsdlk")
+            }).disposed(by: disposeBag)
+        
+        goalTextView.rx.didBeginEditing
+            .bind(onNext: {
+                self.goalTextView.layer.borderColor = UIColor.main800.cgColor
+//                self.
+            }).disposed(by: disposeBag)
+        
+        goalTextView.rx.didEndEditing
+            .bind(onNext: {
+                self.goalTextView.layer.borderColor = UIColor.gray100.cgColor
+                self.goalTextView.resignFirstResponder()
+            }).disposed(by: disposeBag)
+        
+    }
+    
 }
 
 extension MainViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

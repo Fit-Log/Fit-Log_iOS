@@ -6,14 +6,18 @@ class OnboardingViewController: BaseVC {
     
     private let disposeBag = DisposeBag()
 
-    private let mainLogo = UIImageView(image: .logo)
+    private let logoImageView = UIImageView(image: .logo)
     private let loginButton = CustomButton(type: .system, title: "로그인", backgroundColor: .main300, isEnabled: true)
     private let stackView = UIStackView().then {
         $0.axis = .horizontal
         $0.spacing = 4
         $0.backgroundColor = .clear
     }
-    private let signupLabel = CustomLabel(text: "아직 회원이 아니신가요?", textColor: .gray600, font: .IBMPlexSansFont(font: .medium, ofSize: 12))
+    private let signupLabel = UILabel().then {
+        $0.text = "아직 회원이 아니신가요?"
+        $0.textColor = .gray600
+        $0.font = .IBMPlexSansFont(font: .medium, ofSize: 12)
+    }
     private let signupButton = LabelButton(type: .system, title: "회원가입하기", titleColor: .main600, font: .IBMPlexSansFont(font: .medium, ofSize: 12))
     
     
@@ -26,7 +30,7 @@ class OnboardingViewController: BaseVC {
         super.configureUI()
         
         [
-            mainLogo,
+            logoImageView,
             loginButton,
             stackView
         ].forEach({ view.addSubview($0) })
@@ -39,7 +43,7 @@ class OnboardingViewController: BaseVC {
     override func setupConstraints() {
         super.setupConstraints()
         
-        mainLogo.snp.makeConstraints {
+        logoImageView.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.top.equalToSuperview().inset(316)
             $0.width.equalTo(168)
