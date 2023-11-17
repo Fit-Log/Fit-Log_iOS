@@ -8,6 +8,8 @@ class MenuTextField: UITextField {
         placeholder: String
     ) {
         super.init(frame: .zero)
+        self.autocorrectionType = .no
+        self.autocapitalizationType = .none
         self.backgroundColor = .gray100
         self.textColor = .gray800
         self.font = .IBMPlexSansFont(font: .medium, ofSize: 14)
