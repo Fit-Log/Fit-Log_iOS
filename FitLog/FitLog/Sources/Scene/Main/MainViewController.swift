@@ -320,7 +320,7 @@ class MainViewController: BaseVC {
         
         profileButton.rx.tap
             .bind(onNext: {
-                print("fjsdlk")
+                self.pushViewController(UserInfoViewController())
             }).disposed(by: disposeBag)
         
         goalTextView.rx.didBeginEditing
