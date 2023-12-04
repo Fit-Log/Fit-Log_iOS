@@ -5,6 +5,7 @@ enum AuthAPI {
     case signup(SignupInfo)
     case signin(accountId: String, password: String)
     case userInfoUpdate(weight: Int, height: Int, age: Int)
+    case passwordCheck(password: String)
 }
 
 extension AuthAPI: TargetType {
@@ -20,6 +21,8 @@ extension AuthAPI: TargetType {
                 return "/user/signin"
             case .userInfoUpdate:
                 return "/user/update"
+            case .passwordCheck:
+                return "/user"
         }
     }
     
@@ -34,7 +37,6 @@ extension AuthAPI: TargetType {
     
     var task: Moya.Task {
         switch self {
-                
             case .signup:
                 let signup = SignupInfo.shared
                 return .requestParameters(
@@ -62,6 +64,11 @@ extension AuthAPI: TargetType {
                         "height" : height,
                         "age": age
                     ], encoding: JSONEncoding.default)
+            case .passwordCheck(let password):
+                return .requestParameters(
+                    parameters: [
+                        "password_valid": password
+                    ], encoding: URLEncoding.queryString)
         }
     }
     
