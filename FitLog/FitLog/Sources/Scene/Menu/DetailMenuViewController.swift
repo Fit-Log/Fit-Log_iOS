@@ -5,13 +5,18 @@ import RxCocoa
 class DetailMenuViewController: BaseVC {//MARK: 입력한 메뉴를 서버에 보내줘야하는지 로컬에서 처리해야하는지 당연히 서버일거같긴한데
     
     private let disposeBag = DisposeBag()
+//    var closure: () -> Void
     
     var menuArray: [String] = []
-    var kcalArray: [String] = []
+    var kcalArray: [Int] = []//int로 바꾸기
     
+    private let rightButton = UIButton(type: .system).then {
+        $0.setTitle("완료", for: .normal)
+        $0.setTitleColor(.gray800, for: .normal)
+        $0.titleLabel?.font = .IBMPlexSansFont(font: .medium, ofSize: 14)
+    }
     private let mainLogoImage = UIImageView(image: .logo)
     private let mealTimeLabel = UILabel().then {
-        $0.text = "점심"
         $0.textColor = .black
         $0.font = .IBMPlexSansFont(font: .medium, ofSize: 20)
     }
@@ -32,11 +37,27 @@ class DetailMenuViewController: BaseVC {//MARK: 입력한 메뉴를 서버에 �
         $0.rowHeight = 48
         $0.separatorStyle = .none
     }
-
+    
+    public func setter(
+        mealTime: String
+    ) {
+        self.mealTimeLabel.text = mealTime
+    }
+    
+//    init(completion: @escaping () -> Void) {
+//        self.completion = closure
+//        super.init(nibName: nil, bundle: nil)
+//    }
+//    
+//    required init?(coder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         menuTableView.delegate = self
         menuTableView.dataSource = self
+        navigationBarSetting()
     }
     override func configureUI() {
         super.configureUI()
@@ -95,13 +116,23 @@ class DetailMenuViewController: BaseVC {//MARK: 입력한 메뉴를 서버에 �
     override func subscribe() {
         super.subscribe()
         
+        rightButton.rx.tap
+            .bind(onNext: {
+//                let vc = MenuViewController()
+            }).disposed(by: disposeBag)
+        
         addMenuButton.rx.tap
             .bind(onNext: {
                 self.menuArray.append(self.menuTextField.text!)
-                self.kcalArray.append(self.kcalTextField.text!)
+//                self.kcalArray.append(self.kcalTextField.text!)
                 self.menuTableView.reloadData()
             }).disposed(by: disposeBag)
         
+        
+    }
+    
+    func navigationBarSetting() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightButton)
     }
     
 }
@@ -117,7 +148,7 @@ extension DetailMenuViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = menuTableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath) as! MenuTableViewCell
         cell.selectionStyle = .none
         cell.menuLabel.text = self.menuArray[indexPath.row]
-        cell.kcalLabel.text = self.kcalArray[indexPath.row]
+//        cell.kcalLabel.text = self.kcalArray[indexPath.row]
         cell.deleteButton.rx.tap
             .bind(onNext: {
                 self.menuArray.remove(at: indexPath.row)

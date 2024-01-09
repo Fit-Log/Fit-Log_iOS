@@ -6,15 +6,16 @@ class SignupInfo {
     
     static let shared = SignupInfo()
     
-    var userName = BehaviorRelay<String?>(value: nil)
-    var accountId = BehaviorRelay<String?>(value: nil)
-    var password = BehaviorRelay<String?>(value: nil)//케이스 추가
-    var age = BehaviorRelay<Int?>(value: nil)
-    var year = BehaviorRelay<Int?>(value: nil)
-    var month = BehaviorRelay<Int?>(value: nil)
-    var day = BehaviorRelay<Int?>(value: nil)
-    var weight = BehaviorRelay<Int?>(value: nil)
-    var height = BehaviorRelay<Int?>(value: nil)
+    var userName: String?
+    var accountId: String?
+    var password: String?
+    var age: Int?
+    var year: Int?
+    var month: Int?
+    var day: Int?
+    var weight: Int?
+    var height: Int?
     
-    private init() { }
+    private init() {}
+    
 }

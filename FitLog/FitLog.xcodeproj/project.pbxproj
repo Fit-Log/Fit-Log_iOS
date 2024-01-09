@@ -41,11 +41,19 @@
 		8802D4AF2AF0E2CE000E907E /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802D4AE2AF0E2CE000E907E /* CALayer.swift */; };
 		8802D4B12AF0F4E2000E907E /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802D4B02AF0F4E2000E907E /* MenuCell.swift */; };
 		8802D4DA2AF2652A000E907E /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802D4D92AF2652A000E907E /* Chart.swift */; };
+		8849DAB22B1B87DB00708256 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849DAB12B1B87DB00708256 /* AuthAPI.swift */; };
+		8849DAB42B1B897300708256 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849DAB32B1B897300708256 /* Header.swift */; };
+		8849DAB62B1B898D00708256 /* MoyaLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849DAB52B1B898D00708256 /* MoyaLoggerPlugin.swift */; };
+		8849DAB82B1B8AE300708256 /* DiaryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849DAB72B1B8AE300708256 /* DiaryAPI.swift */; };
+		8849DABD2B1C3E7100708256 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 8849DABC2B1C3E7100708256 /* SwiftKeychainWrapper */; };
+		8849DABF2B1C3E8100708256 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 8849DABE2B1C3E8100708256 /* Moya */; };
+		8849DAC12B1C3E8100708256 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 8849DAC02B1C3E8100708256 /* RxMoya */; };
+		8849DAC42B1C3EF200708256 /* SignupInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849DAC32B1C3EF200708256 /* SignupInfo.swift */; };
+		8849DACC2B1C517800708256 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849DACB2B1C517800708256 /* AuthModel.swift */; };
 		888CC4752AFA55AD00C50A99 /* LabelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CC4742AFA55AD00C50A99 /* LabelButton.swift */; };
 		888CC4772AFA563E00C50A99 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CC4762AFA563E00C50A99 /* CustomTextField.swift */; };
 		888CC4792AFA754D00C50A99 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CC4782AFA754D00C50A99 /* CustomButton.swift */; };
 		888CC47C2AFA785800C50A99 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CC47B2AFA785800C50A99 /* OnboardingViewController.swift */; };
-		888CC47E2AFA7AA200C50A99 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CC47D2AFA7AA200C50A99 /* CustomLabel.swift */; };
 		888CC4812AFA807E00C50A99 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CC4802AFA807E00C50A99 /* LoginViewController.swift */; };
 		888CC4852AFA80CA00C50A99 /* IdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CC4842AFA80CA00C50A99 /* IdViewController.swift */; };
 		888CC4872AFB10BD00C50A99 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CC4862AFB10BD00C50A99 /* PasswordViewController.swift */; };
@@ -58,6 +66,13 @@
 		888CC4C22AFB6D4300C50A99 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CC4C12AFB6D4300C50A99 /* RecordViewController.swift */; };
 		888CC4EA2AFD22EC00C50A99 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 888CC4E92AFD22EC00C50A99 /* DGCharts */; };
 		888CC4EC2AFDD4BE00C50A99 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CC4EB2AFDD4BE00C50A99 /* CustomTextView.swift */; };
+		88C3E3562B0600AB009B2A32 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C3E3552B0600AB009B2A32 /* MenuViewController.swift */; };
+		88C3E3582B060218009B2A32 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C3E3572B060218009B2A32 /* MenuView.swift */; };
+		88C3E35A2B0605B6009B2A32 /* DetailMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C3E3592B0605B6009B2A32 /* DetailMenuViewController.swift */; };
+		88C3E35C2B0608B0009B2A32 /* MenuTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C3E35B2B0608B0009B2A32 /* MenuTextField.swift */; };
+		88C3E35F2B072A31009B2A32 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C3E35E2B072A31009B2A32 /* MenuTableViewCell.swift */; };
+		88C3E3622B075331009B2A32 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C3E3612B075331009B2A32 /* UserInfoViewController.swift */; };
+		88C3E3642B075366009B2A32 /* UserInfoEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C3E3632B075366009B2A32 /* UserInfoEditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,11 +108,16 @@
 		8802D4AE2AF0E2CE000E907E /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
 		8802D4B02AF0F4E2000E907E /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		8802D4D92AF2652A000E907E /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		8849DAB12B1B87DB00708256 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		8849DAB32B1B897300708256 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		8849DAB52B1B898D00708256 /* MoyaLoggerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggerPlugin.swift; sourceTree = "<group>"; };
+		8849DAB72B1B8AE300708256 /* DiaryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryAPI.swift; sourceTree = "<group>"; };
+		8849DAC32B1C3EF200708256 /* SignupInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupInfo.swift; sourceTree = "<group>"; };
+		8849DACB2B1C517800708256 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
 		888CC4742AFA55AD00C50A99 /* LabelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelButton.swift; sourceTree = "<group>"; };
 		888CC4762AFA563E00C50A99 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		888CC4782AFA754D00C50A99 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		888CC47B2AFA785800C50A99 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
-		888CC47D2AFA7AA200C50A99 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		888CC4802AFA807E00C50A99 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		888CC4842AFA80CA00C50A99 /* IdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdViewController.swift; sourceTree = "<group>"; };
 		888CC4862AFB10BD00C50A99 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +128,13 @@
 		888CC4BD2AFB6A5400C50A99 /* ChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeViewController.swift; sourceTree = "<group>"; };
 		888CC4C12AFB6D4300C50A99 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		888CC4EB2AFDD4BE00C50A99 /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		88C3E3552B0600AB009B2A32 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		88C3E3572B060218009B2A32 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		88C3E3592B0605B6009B2A32 /* DetailMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMenuViewController.swift; sourceTree = "<group>"; };
+		88C3E35B2B0608B0009B2A32 /* MenuTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTextField.swift; sourceTree = "<group>"; };
+		88C3E35E2B072A31009B2A32 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		88C3E3612B075331009B2A32 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		88C3E3632B075366009B2A32 /* UserInfoEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,10 +144,13 @@
 			files = (
 				8802D4342AEFF8FF000E907E /* Then in Frameworks */,
 				8802D4372AEFF90B000E907E /* SnapKit in Frameworks */,
+				8849DABF2B1C3E8100708256 /* Moya in Frameworks */,
 				888CC48E2AFB30D800C50A99 /* RxGesture in Frameworks */,
 				8802D43D2AEFF959000E907E /* RxCocoa in Frameworks */,
 				888CC4EA2AFD22EC00C50A99 /* DGCharts in Frameworks */,
+				8849DAC12B1C3E8100708256 /* RxMoya in Frameworks */,
 				8802D43A2AEFF924000E907E /* Moya in Frameworks */,
+				8849DABD2B1C3E7100708256 /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +201,8 @@
 				8802D42F2AEFE2F4000E907E /* Base */,
 				8802D4D82AF2651D000E907E /* Component */,
 				8802D44F2AF00000000E907E /* Extension */,
+				8849DA6D2B19FA3400708256 /* Netwoking */,
+				8849DACA2B1C45EE00708256 /* Model */,
 				8802D42B2AEFE2CD000E907E /* Scene */,
 			);
 			path = Sources;
@@ -193,6 +225,8 @@
 				8802D42C2AEFE2DA000E907E /* Main */,
 				888CC4C02AFB6D3000C50A99 /* PhysicalChange */,
 				888CC4BF2AFB6CCD00C50A99 /* Record */,
+				88C3E3542B06006D009B2A32 /* Menu */,
+				88C3E3602B0752FD009B2A32 /* User */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -284,10 +318,63 @@
 				888CC4742AFA55AD00C50A99 /* LabelButton.swift */,
 				888CC4762AFA563E00C50A99 /* CustomTextField.swift */,
 				888CC4782AFA754D00C50A99 /* CustomButton.swift */,
-				888CC47D2AFA7AA200C50A99 /* CustomLabel.swift */,
 				888CC4EB2AFDD4BE00C50A99 /* CustomTextView.swift */,
+				88C3E3572B060218009B2A32 /* MenuView.swift */,
+				88C3E35B2B0608B0009B2A32 /* MenuTextField.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		8849DA6D2B19FA3400708256 /* Netwoking */ = {
+			isa = PBXGroup;
+			children = (
+				8849DA6F2B19FA4900708256 /* API */,
+				8849DA712B19FA5600708256 /* Header */,
+				8849DA732B19FA7300708256 /* Plugin */,
+				8849DAC22B1C3EE400708256 /* SignupInfo */,
+			);
+			path = Netwoking;
+			sourceTree = "<group>";
+		};
+		8849DA6F2B19FA4900708256 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8849DAB12B1B87DB00708256 /* AuthAPI.swift */,
+				8849DAB72B1B8AE300708256 /* DiaryAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8849DA712B19FA5600708256 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				8849DAB32B1B897300708256 /* Header.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		8849DA732B19FA7300708256 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				8849DAB52B1B898D00708256 /* MoyaLoggerPlugin.swift */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		8849DAC22B1C3EE400708256 /* SignupInfo */ = {
+			isa = PBXGroup;
+			children = (
+				8849DAC32B1C3EF200708256 /* SignupInfo.swift */,
+			);
+			path = SignupInfo;
+			sourceTree = "<group>";
+		};
+		8849DACA2B1C45EE00708256 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8849DACB2B1C517800708256 /* AuthModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		888CC47A2AFA784A00C50A99 /* Onboarding */ = {
@@ -342,6 +429,33 @@
 			path = PhysicalChange;
 			sourceTree = "<group>";
 		};
+		88C3E3542B06006D009B2A32 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				88C3E3552B0600AB009B2A32 /* MenuViewController.swift */,
+				88C3E3592B0605B6009B2A32 /* DetailMenuViewController.swift */,
+				88C3E35D2B072A14009B2A32 /* Cell */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		88C3E35D2B072A14009B2A32 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				88C3E35E2B072A31009B2A32 /* MenuTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		88C3E3602B0752FD009B2A32 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				88C3E3612B075331009B2A32 /* UserInfoViewController.swift */,
+				88C3E3632B075366009B2A32 /* UserInfoEditViewController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -365,6 +479,9 @@
 				8802D43C2AEFF959000E907E /* RxCocoa */,
 				888CC48D2AFB30D800C50A99 /* RxGesture */,
 				888CC4E92AFD22EC00C50A99 /* DGCharts */,
+				8849DABC2B1C3E7100708256 /* SwiftKeychainWrapper */,
+				8849DABE2B1C3E8100708256 /* Moya */,
+				8849DAC02B1C3E8100708256 /* RxMoya */,
 			);
 			productName = FitLog;
 			productReference = 8802D4112AEFE272000E907E /* FitLog.app */;
@@ -401,6 +518,7 @@
 				8802D43B2AEFF959000E907E /* XCRemoteSwiftPackageReference "RxSwift" */,
 				888CC48C2AFB30D800C50A99 /* XCRemoteSwiftPackageReference "RxGesture" */,
 				888CC4E82AFD22EC00C50A99 /* XCRemoteSwiftPackageReference "Charts" */,
+				8849DABB2B1C3E7100708256 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 			);
 			productRefGroup = 8802D4122AEFE272000E907E /* Products */;
 			projectDirPath = "";
@@ -448,28 +566,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				888CC4792AFA754D00C50A99 /* CustomButton.swift in Sources */,
-				888CC47E2AFA7AA200C50A99 /* CustomLabel.swift in Sources */,
 				888CC4EC2AFDD4BE00C50A99 /* CustomTextView.swift in Sources */,
+				88C3E35F2B072A31009B2A32 /* MenuTableViewCell.swift in Sources */,
 				8802D4DA2AF2652A000E907E /* Chart.swift in Sources */,
 				8802D42E2AEFE2EE000E907E /* MainViewController.swift in Sources */,
+				8849DAC42B1C3EF200708256 /* SignupInfo.swift in Sources */,
 				8802D4AF2AF0E2CE000E907E /* CALayer.swift in Sources */,
 				8802D4B12AF0F4E2000E907E /* MenuCell.swift in Sources */,
 				888CC48B2AFB2D0200C50A99 /* PhysicalInfoViewController.swift in Sources */,
+				88C3E3562B0600AB009B2A32 /* MenuViewController.swift in Sources */,
+				88C3E35A2B0605B6009B2A32 /* DetailMenuViewController.swift in Sources */,
+				8849DAB82B1B8AE300708256 /* DiaryAPI.swift in Sources */,
 				8802D4152AEFE272000E907E /* AppDelegate.swift in Sources */,
 				8802D4572AF0015B000E907E /* UIFont.swift in Sources */,
+				88C3E3582B060218009B2A32 /* MenuView.swift in Sources */,
+				88C3E3642B075366009B2A32 /* UserInfoEditViewController.swift in Sources */,
 				888CC4852AFA80CA00C50A99 /* IdViewController.swift in Sources */,
 				888CC4BE2AFB6A5400C50A99 /* ChangeViewController.swift in Sources */,
+				8849DAB42B1B897300708256 /* Header.swift in Sources */,
 				8802D4172AEFE272000E907E /* SceneDelegate.swift in Sources */,
 				888CC4772AFA563E00C50A99 /* CustomTextField.swift in Sources */,
 				8802D4312AEFE301000E907E /* BaseVC.swift in Sources */,
 				888CC4812AFA807E00C50A99 /* LoginViewController.swift in Sources */,
+				88C3E3622B075331009B2A32 /* UserInfoViewController.swift in Sources */,
 				888CC47C2AFA785800C50A99 /* OnboardingViewController.swift in Sources */,
+				88C3E35C2B0608B0009B2A32 /* MenuTextField.swift in Sources */,
 				888CC4C22AFB6D4300C50A99 /* RecordViewController.swift in Sources */,
 				888CC4902AFB31B900C50A99 /* WorkoutTimeViewController.swift in Sources */,
+				8849DACC2B1C517800708256 /* AuthModel.swift in Sources */,
 				888CC4752AFA55AD00C50A99 /* LabelButton.swift in Sources */,
 				8802D4522AF00048000E907E /* UIViewController.swift in Sources */,
 				888CC4872AFB10BD00C50A99 /* PasswordViewController.swift in Sources */,
+				8849DAB22B1B87DB00708256 /* AuthAPI.swift in Sources */,
 				888CC4922AFB36C800C50A99 /* TabBarVC.swift in Sources */,
+				8849DAB62B1B898D00708256 /* MoyaLoggerPlugin.swift in Sources */,
 				888CC4892AFB11E300C50A99 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -717,6 +847,14 @@
 				minimumVersion = 6.6.0;
 			};
 		};
+		8849DABB2B1C3E7100708256 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
 		888CC48C2AFB30D800C50A99 /* XCRemoteSwiftPackageReference "RxGesture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RxSwiftCommunity/RxGesture";
@@ -755,6 +893,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8802D43B2AEFF959000E907E /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
+		};
+		8849DABC2B1C3E7100708256 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8849DABB2B1C3E7100708256 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+		8849DABE2B1C3E8100708256 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8802D4382AEFF924000E907E /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		8849DAC02B1C3E8100708256 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8802D4382AEFF924000E907E /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
 		};
 		888CC48D2AFB30D800C50A99 /* RxGesture */ = {
 			isa = XCSwiftPackageProductDependency;

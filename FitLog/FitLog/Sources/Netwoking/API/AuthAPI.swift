@@ -41,9 +41,9 @@ extension AuthAPI: TargetType {
                 let signup = SignupInfo.shared
                 return .requestParameters(
                     parameters: [
-                        "name" : signup.userName.value!,
-                        "account_id" : signup.accountId.value!,
-                        "password" : signup.password.value!,
+                        "name" : signup.userName,
+                        "account_id" : signup.accountId,
+                        "password" : signup.password,
                         "age" : signup.age,
                         "year": signup.year,
                         "month": signup.month,

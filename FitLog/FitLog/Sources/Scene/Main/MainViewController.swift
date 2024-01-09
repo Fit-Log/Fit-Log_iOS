@@ -318,6 +318,11 @@ class MainViewController: BaseVC {
                 self.pushViewController(WorkoutTimeViewController())
             }).disposed(by: disposeBag)
         
+        menuEditButton.rx.tap
+            .bind(onNext: {
+                self.pushViewController(MenuViewController())
+            }).disposed(by: disposeBag)
+        
         profileButton.rx.tap
             .bind(onNext: {
                 self.pushViewController(UserInfoViewController())

@@ -1,6 +1,8 @@
 import UIKit
 import SnapKit
 import Then
+import RxSwift
+import RxCocoa
 
 class MenuView: UIView {
     
@@ -19,11 +21,15 @@ class MenuView: UIView {
     }
     
     
-    init(time: String) {
+    init(mealTime: String) {
         super.init(frame: .zero)
-        label.text = time
+        label.text = mealTime
         setting()
         layout()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     func setting() {
@@ -48,10 +54,6 @@ class MenuView: UIView {
         kcalLabel.snp.makeConstraints {
             $0.right.bottom.equalToSuperview().inset(12)
         }
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
 }

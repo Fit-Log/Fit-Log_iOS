@@ -9,6 +9,7 @@ class BaseVC: UIViewController, UIGestureRecognizerDelegate {
         view.backgroundColor = .white
         navigationItem.hidesBackButton = true
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        bind()
         subscribe()
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -24,6 +25,9 @@ class BaseVC: UIViewController, UIGestureRecognizerDelegate {
         
     }
     func setupConstraints() {
+        
+    }
+    func bind() {
         
     }
     func subscribe() {

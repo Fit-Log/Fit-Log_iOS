@@ -12,11 +12,11 @@ class MenuViewController: BaseVC {
         $0.textColor = .black
         $0.font = .IBMPlexSansFont(font: .medium, ofSize: 16)
     }
-    private let breakfastView = MenuView(time: "아침")
-    private let lunchView = MenuView(time: "점심")
-    private let dinnerView = MenuView(time: "저녁")
+    private let breakfastView = MenuView(mealTime: "아침")
+    private let lunchView = MenuView(mealTime: "점심")
+    private let dinnerView = MenuView(mealTime: "저녁")
     //dinnerView 버튼에 직접 접근하는게 나은지 지정해놓고 사용하는게 나은지...
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -65,6 +65,25 @@ class MenuViewController: BaseVC {
     override func subscribe() {
         super.subscribe()
         
+        let vc = DetailMenuViewController()
+        
+        breakfastView.editButton.rx.tap
+            .bind(onNext: {
+                vc.setter(mealTime: "아침")
+                self.pushViewController(vc)
+            }).disposed(by: disposeBag)
+        
+        lunchView.editButton.rx.tap
+            .bind(onNext: {
+                vc.setter(mealTime: "점심")
+                self.pushViewController(vc)
+            }).disposed(by: disposeBag)
+        
+        dinnerView.editButton.rx.tap
+            .bind(onNext: {
+                vc.setter(mealTime: "저녁")
+                self.pushViewController(vc)
+            }).disposed(by: disposeBag)
 //        breakfastView.
         
     }
